@@ -1,0 +1,19 @@
+<uib-pagination
+	total-items="totalItems"
+	items-per-page="num"
+	max-size="maxPages"
+	ng-model="currentPage"
+	ng-change="changePage(currentPage)"
+	boundary-link-numbers="true"
+	force-ellipses="true"
+	class="pagination-md pages">
+</uib-pagination>
+<div>
+	<a class="poster" ng-repeat="movie in movies" aria-label="movie.title">
+		<img ng-src="{{movie.posterurl}}">
+		<md-tooltip md-direction="top" class="popup">
+			{{movie.title}}
+		</md-tooltip>
+	</a>
+</div>
+
