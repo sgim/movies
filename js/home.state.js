@@ -13,6 +13,16 @@ app.config(function ($stateProvider) {
 				</a>
         </div>
 			</div>
+			<uib-pagination
+				total-items="totalItems"
+				items-per-page="perPage"
+				max-size="maxPages"
+				ng-model="currentPage"
+				ng-change="changePage(currentPage)"
+				boundary-link-numbers="true"
+				force-ellipses="true"
+				class="pagination-md">
+			</uib-pagination>
     `,
     controller: "HomeCtrl"
   });

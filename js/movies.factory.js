@@ -46,8 +46,7 @@ app.factory("MovieLists", function ($http, $log) {
   return {
     // create list of movies now_playing
     // createMovieList could later be used for 'latest', 'upcoming' and 'popular'
-    now_playing: createMovieList("now_playing"),
-    currentPage: 1
+    now_playing: createMovieList("now_playing")
   };
 
 });
